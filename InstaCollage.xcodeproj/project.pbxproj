@@ -24,6 +24,7 @@
 		FF74FD1F19B9EBD9004C5CAC /* InstaCollageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74FD1E19B9EBD9004C5CAC /* InstaCollageTests.m */; };
 		FFA6110219B9F1DC0082C296 /* KMPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA6110119B9F1DC0082C296 /* KMPhoto.m */; };
 		FFA6110619B9F34E0082C296 /* KMInstagramManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA6110519B9F34E0082C296 /* KMInstagramManager.m */; };
+		FFD2A13819BA066200585C15 /* KMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2A13719BA066200585C15 /* KMPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		FFA6110119B9F1DC0082C296 /* KMPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPhoto.m; sourceTree = "<group>"; };
 		FFA6110419B9F34E0082C296 /* KMInstagramManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramManager.h; sourceTree = "<group>"; };
 		FFA6110519B9F34E0082C296 /* KMInstagramManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramManager.m; sourceTree = "<group>"; };
+		FFD2A13619BA066200585C15 /* KMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMPickerViewController.h; sourceTree = "<group>"; };
+		FFD2A13719BA066200585C15 /* KMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMPickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,13 +127,11 @@
 		FF74FCF919B9EBD9004C5CAC /* InstaCollage */ = {
 			isa = PBXGroup;
 			children = (
-				FFA6110319B9F31D0082C296 /* Managers */,
-				FFA610FF19B9F1BD0082C296 /* Models */,
 				FF74FD0319B9EBD9004C5CAC /* KMAppDelegate.m */,
 				FF74FD0219B9EBD9004C5CAC /* KMAppDelegate.h */,
-				FF74FD0519B9EBD9004C5CAC /* Main.storyboard */,
-				FF74FD0819B9EBD9004C5CAC /* KMViewController.h */,
-				FF74FD0919B9EBD9004C5CAC /* KMViewController.m */,
+				FFA6110319B9F31D0082C296 /* Managers */,
+				FFA610FF19B9F1BD0082C296 /* Models */,
+				FFD2A13919BA081B00585C15 /* Controllers */,
 				FF74FD0B19B9EBD9004C5CAC /* Images.xcassets */,
 				FF74FCFA19B9EBD9004C5CAC /* Supporting Files */,
 			);
@@ -182,6 +183,18 @@
 				FFA6110519B9F34E0082C296 /* KMInstagramManager.m */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		FFD2A13919BA081B00585C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2A13619BA066200585C15 /* KMPickerViewController.h */,
+				FFD2A13719BA066200585C15 /* KMPickerViewController.m */,
+				FF74FD0819B9EBD9004C5CAC /* KMViewController.h */,
+				FF74FD0919B9EBD9004C5CAC /* KMViewController.m */,
+				FF74FD0519B9EBD9004C5CAC /* Main.storyboard */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +332,7 @@
 			files = (
 				FFA6110619B9F34E0082C296 /* KMInstagramManager.m in Sources */,
 				FF74FD0A19B9EBD9004C5CAC /* KMViewController.m in Sources */,
+				FFD2A13819BA066200585C15 /* KMPickerViewController.m in Sources */,
 				FF74FD0419B9EBD9004C5CAC /* KMAppDelegate.m in Sources */,
 				FFA6110219B9F1DC0082C296 /* KMPhoto.m in Sources */,
 				FF74FD0019B9EBD9004C5CAC /* main.m in Sources */,

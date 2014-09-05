@@ -14,6 +14,8 @@
 @property(nonatomic, strong) AFHTTPRequestOperationManager *manager;
 
 +(KMInstagramManager*)sharedManager;
-- (void)getUserIdByUsername:(NSString*)aUsername Success:(void(^)(NSInteger *userId))aSuccess andFail:(id)aFail;
+
+- (void)getUserIdByUsername:(NSString*)aUsername Success:(void(^)(int userId))aSuccess andFail:(void(^)(NSError *error))aFail;
+- (void)getImagesByUserId:(int)aUserid withSuccess:(void(^)(NSArray *photos))aSuccess andFail:(void(^)(NSError *error))aFail;
 
 @end

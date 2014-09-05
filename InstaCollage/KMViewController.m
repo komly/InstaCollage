@@ -8,8 +8,12 @@
 
 #import "KMViewController.h"
 #import "KMInstagramManager.h"
+#import "KMPickerViewController.h"
 
-@interface KMViewController ()
+@interface KMViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (assign, nonatomic) int userId;
 
 @end
 
@@ -17,14 +21,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.usernameTextField setDelegate:self];
 }
 
 #pragma mark - UI Actions
 
 - (IBAction)makeCollageAction:(id)sender {
-    [[KMInstagramManager sharedManager] getUserIdByUsername:@"komly1" Success:^(NSInteger *userId) {
+    
+    NSString *username = self.usernameTextField.text;
+    
+    [[KMInstagramManager sharedManager] getUserIdByUsername:username Success:^(int userId) {
         
-    } andFail:nil];
+        self.userId = userId;
+        [self performSegueWithIdentifier:@"pickPhotosSegue" sender:self];
+        
+    } andFail:^(NSError *error) {
+        
+        NSLog(@"%@",error);
+        
+    }];
+    
+    
+  
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.usernameTextField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"pickPhotosSegue"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        KMPickerViewController *pickerViewController = [navigationController.viewControllers objectAtIndex:0];
+        pickerViewController.userId = 3;
+    }
 }
 
 @end

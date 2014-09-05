@@ -10,4 +10,8 @@
 
 @interface KMPhoto : NSObject
 
+@property (nonatomic, strong) NSURL *lowUrl;
+@property (nonatomic, strong) NSURL *standardUrl;
+@property (nonatomic, strong) NSURL *thumbnailUrl;
+
 @end
