@@ -7,6 +7,7 @@
 //
 
 #import "KMViewController.h"
+#import "KMInstagramManager.h"
 
 @interface KMViewController ()
 
@@ -21,7 +22,9 @@
 #pragma mark - UI Actions
 
 - (IBAction)makeCollageAction:(id)sender {
-    
+    [[KMInstagramManager sharedManager] getUserIdByUsername:@"komly1" Success:^(NSInteger *userId) {
+        
+    } andFail:nil];
 }
 
 @end
