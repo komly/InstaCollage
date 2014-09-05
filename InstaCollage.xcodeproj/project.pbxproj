@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF74FCF419B9EBD9004C5CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF319B9EBD9004C5CAC /* Foundation.framework */; };
+		FF74FCF619B9EBD9004C5CAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF519B9EBD9004C5CAC /* CoreGraphics.framework */; };
+		FF74FCF819B9EBD9004C5CAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF719B9EBD9004C5CAC /* UIKit.framework */; };
+		FF74FCFE19B9EBD9004C5CAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF74FCFC19B9EBD9004C5CAC /* InfoPlist.strings */; };
+		FF74FD0019B9EBD9004C5CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74FCFF19B9EBD9004C5CAC /* main.m */; };
+		FF74FD0419B9EBD9004C5CAC /* KMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74FD0319B9EBD9004C5CAC /* KMAppDelegate.m */; };
+		FF74FD0719B9EBD9004C5CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF74FD0519B9EBD9004C5CAC /* Main.storyboard */; };
+		FF74FD0A19B9EBD9004C5CAC /* KMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74FD0919B9EBD9004C5CAC /* KMViewController.m */; };
+		FF74FD0C19B9EBD9004C5CAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF74FD0B19B9EBD9004C5CAC /* Images.xcassets */; };
+		FF74FD1319B9EBD9004C5CAC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FD1219B9EBD9004C5CAC /* XCTest.framework */; };
+		FF74FD1419B9EBD9004C5CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF319B9EBD9004C5CAC /* Foundation.framework */; };
+		FF74FD1519B9EBD9004C5CAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF719B9EBD9004C5CAC /* UIKit.framework */; };
+		FF74FD1D19B9EBD9004C5CAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF74FD1B19B9EBD9004C5CAC /* InfoPlist.strings */; };
+		FF74FD1F19B9EBD9004C5CAC /* InstaCollageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74FD1E19B9EBD9004C5CAC /* InstaCollageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF74FD1619B9EBD9004C5CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF74FCE819B9EBD9004C5CAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF74FCEF19B9EBD9004C5CAC;
+			remoteInfo = InstaCollage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF74FCF019B9EBD9004C5CAC /* InstaCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF74FCF319B9EBD9004C5CAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF74FCF519B9EBD9004C5CAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF74FCF719B9EBD9004C5CAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF74FCFB19B9EBD9004C5CAC /* InstaCollage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaCollage-Info.plist"; sourceTree = "<group>"; };
+		FF74FCFD19B9EBD9004C5CAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF74FCFF19B9EBD9004C5CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF74FD0119B9EBD9004C5CAC /* InstaCollage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaCollage-Prefix.pch"; sourceTree = "<group>"; };
+		FF74FD0219B9EBD9004C5CAC /* KMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMAppDelegate.h; sourceTree = "<group>"; };
+		FF74FD0319B9EBD9004C5CAC /* KMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMAppDelegate.m; sourceTree = "<group>"; };
+		FF74FD0619B9EBD9004C5CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF74FD0819B9EBD9004C5CAC /* KMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMViewController.h; sourceTree = "<group>"; };
+		FF74FD0919B9EBD9004C5CAC /* KMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMViewController.m; sourceTree = "<group>"; };
+		FF74FD0B19B9EBD9004C5CAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF74FD1119B9EBD9004C5CAC /* InstaCollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCollageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF74FD1219B9EBD9004C5CAC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF74FD1A19B9EBD9004C5CAC /* InstaCollageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaCollageTests-Info.plist"; sourceTree = "<group>"; };
+		FF74FD1C19B9EBD9004C5CAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF74FD1E19B9EBD9004C5CAC /* InstaCollageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaCollageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF74FCED19B9EBD9004C5CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FCF619B9EBD9004C5CAC /* CoreGraphics.framework in Frameworks */,
+				FF74FCF819B9EBD9004C5CAC /* UIKit.framework in Frameworks */,
+				FF74FCF419B9EBD9004C5CAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF74FD0E19B9EBD9004C5CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FD1319B9EBD9004C5CAC /* XCTest.framework in Frameworks */,
+				FF74FD1519B9EBD9004C5CAC /* UIKit.framework in Frameworks */,
+				FF74FD1419B9EBD9004C5CAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF74FCE719B9EBD9004C5CAC = {
+			isa = PBXGroup;
+			children = (
+				FF74FCF919B9EBD9004C5CAC /* InstaCollage */,
+				FF74FD1819B9EBD9004C5CAC /* InstaCollageTests */,
+				FF74FCF219B9EBD9004C5CAC /* Frameworks */,
+				FF74FCF119B9EBD9004C5CAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF74FCF119B9EBD9004C5CAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FCF019B9EBD9004C5CAC /* InstaCollage.app */,
+				FF74FD1119B9EBD9004C5CAC /* InstaCollageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF74FCF219B9EBD9004C5CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FCF319B9EBD9004C5CAC /* Foundation.framework */,
+				FF74FCF519B9EBD9004C5CAC /* CoreGraphics.framework */,
+				FF74FCF719B9EBD9004C5CAC /* UIKit.framework */,
+				FF74FD1219B9EBD9004C5CAC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF74FCF919B9EBD9004C5CAC /* InstaCollage */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FD0219B9EBD9004C5CAC /* KMAppDelegate.h */,
+				FF74FD0319B9EBD9004C5CAC /* KMAppDelegate.m */,
+				FF74FD0519B9EBD9004C5CAC /* Main.storyboard */,
+				FF74FD0819B9EBD9004C5CAC /* KMViewController.h */,
+				FF74FD0919B9EBD9004C5CAC /* KMViewController.m */,
+				FF74FD0B19B9EBD9004C5CAC /* Images.xcassets */,
+				FF74FCFA19B9EBD9004C5CAC /* Supporting Files */,
+			);
+			path = InstaCollage;
+			sourceTree = "<group>";
+		};
+		FF74FCFA19B9EBD9004C5CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FCFB19B9EBD9004C5CAC /* InstaCollage-Info.plist */,
+				FF74FCFC19B9EBD9004C5CAC /* InfoPlist.strings */,
+				FF74FCFF19B9EBD9004C5CAC /* main.m */,
+				FF74FD0119B9EBD9004C5CAC /* InstaCollage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF74FD1819B9EBD9004C5CAC /* InstaCollageTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FD1E19B9EBD9004C5CAC /* InstaCollageTests.m */,
+				FF74FD1919B9EBD9004C5CAC /* Supporting Files */,
+			);
+			path = InstaCollageTests;
+			sourceTree = "<group>";
+		};
+		FF74FD1919B9EBD9004C5CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF74FD1A19B9EBD9004C5CAC /* InstaCollageTests-Info.plist */,
+				FF74FD1B19B9EBD9004C5CAC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF74FCEF19B9EBD9004C5CAC /* InstaCollage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF74FD2219B9EBD9004C5CAC /* Build configuration list for PBXNativeTarget "InstaCollage" */;
+			buildPhases = (
+				FF74FCEC19B9EBD9004C5CAC /* Sources */,
+				FF74FCED19B9EBD9004C5CAC /* Frameworks */,
+				FF74FCEE19B9EBD9004C5CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaCollage;
+			productName = InstaCollage;
+			productReference = FF74FCF019B9EBD9004C5CAC /* InstaCollage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF74FD1019B9EBD9004C5CAC /* InstaCollageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF74FD2519B9EBD9004C5CAC /* Build configuration list for PBXNativeTarget "InstaCollageTests" */;
+			buildPhases = (
+				FF74FD0D19B9EBD9004C5CAC /* Sources */,
+				FF74FD0E19B9EBD9004C5CAC /* Frameworks */,
+				FF74FD0F19B9EBD9004C5CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF74FD1719B9EBD9004C5CAC /* PBXTargetDependency */,
+			);
+			name = InstaCollageTests;
+			productName = InstaCollageTests;
+			productReference = FF74FD1119B9EBD9004C5CAC /* InstaCollageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF74FCE819B9EBD9004C5CAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Петров Дмитрий";
+				TargetAttributes = {
+					FF74FD1019B9EBD9004C5CAC = {
+						TestTargetID = FF74FCEF19B9EBD9004C5CAC;
+					};
+				};
+			};
+			buildConfigurationList = FF74FCEB19B9EBD9004C5CAC /* Build configuration list for PBXProject "InstaCollage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF74FCE719B9EBD9004C5CAC;
+			productRefGroup = FF74FCF119B9EBD9004C5CAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF74FCEF19B9EBD9004C5CAC /* InstaCollage */,
+				FF74FD1019B9EBD9004C5CAC /* InstaCollageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF74FCEE19B9EBD9004C5CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FD0C19B9EBD9004C5CAC /* Images.xcassets in Resources */,
+				FF74FCFE19B9EBD9004C5CAC /* InfoPlist.strings in Resources */,
+				FF74FD0719B9EBD9004C5CAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF74FD0F19B9EBD9004C5CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FD1D19B9EBD9004C5CAC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF74FCEC19B9EBD9004C5CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FD0A19B9EBD9004C5CAC /* KMViewController.m in Sources */,
+				FF74FD0419B9EBD9004C5CAC /* KMAppDelegate.m in Sources */,
+				FF74FD0019B9EBD9004C5CAC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF74FD0D19B9EBD9004C5CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF74FD1F19B9EBD9004C5CAC /* InstaCollageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF74FD1719B9EBD9004C5CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF74FCEF19B9EBD9004C5CAC /* InstaCollage */;
+			targetProxy = FF74FD1619B9EBD9004C5CAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF74FCFC19B9EBD9004C5CAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF74FCFD19B9EBD9004C5CAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF74FD0519B9EBD9004C5CAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF74FD0619B9EBD9004C5CAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF74FD1B19B9EBD9004C5CAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF74FD1C19B9EBD9004C5CAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF74FD2019B9EBD9004C5CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF74FD2119B9EBD9004C5CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF74FD2319B9EBD9004C5CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaCollage/InstaCollage-Prefix.pch";
+				INFOPLIST_FILE = "InstaCollage/InstaCollage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF74FD2419B9EBD9004C5CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaCollage/InstaCollage-Prefix.pch";
+				INFOPLIST_FILE = "InstaCollage/InstaCollage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF74FD2619B9EBD9004C5CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaCollage.app/InstaCollage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaCollage/InstaCollage-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InstaCollageTests/InstaCollageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF74FD2719B9EBD9004C5CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaCollage.app/InstaCollage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaCollage/InstaCollage-Prefix.pch";
+				INFOPLIST_FILE = "InstaCollageTests/InstaCollageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF74FCEB19B9EBD9004C5CAC /* Build configuration list for PBXProject "InstaCollage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF74FD2019B9EBD9004C5CAC /* Debug */,
+				FF74FD2119B9EBD9004C5CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF74FD2219B9EBD9004C5CAC /* Build configuration list for PBXNativeTarget "InstaCollage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF74FD2319B9EBD9004C5CAC /* Debug */,
+				FF74FD2419B9EBD9004C5CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF74FD2519B9EBD9004C5CAC /* Build configuration list for PBXNativeTarget "InstaCollageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF74FD2619B9EBD9004C5CAC /* Debug */,
+				FF74FD2719B9EBD9004C5CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF74FCE819B9EBD9004C5CAC /* Project object */;
+}
