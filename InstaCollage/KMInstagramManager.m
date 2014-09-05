@@ -56,7 +56,7 @@ static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
 
 - (void)getImagesByUserId:(int)aUserid withSuccess:(void(^)(NSArray *photos))aSuccess andFail:(void(^)(NSError *error))aFail{
    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:kClientId forKey:@"client_id"];
-    [params setValue:@10 forKey:@"COUNT"];
+    [params setValue:@40 forKey:@"COUNT"];
     NSString *requestString = [NSString stringWithFormat:@"users/%d/media/recent", aUserid];
     
     [self.manager GET:requestString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

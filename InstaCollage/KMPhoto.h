@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSURL *standardUrl;
 @property (nonatomic, strong) NSURL *thumbnailUrl;
 
+@property (nonatomic, assign) BOOL selected;
+
 @end

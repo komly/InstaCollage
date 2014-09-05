@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZZ-lz-fg4">
@@ -52,11 +52,11 @@
                         <viewControllerLayoutGuide type="bottom" id="zmI-iK-Shh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Hq-Rl-KIf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-6n-Rp0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QNw-PV-4ja">
                                     <size key="itemSize" width="100" height="100"/>
@@ -73,14 +73,45 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Username" id="Nee-e9-rZO"/>
+                    <navigationItem key="navigationItem" title="Username" id="Nee-e9-rZO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RIV-wE-KMB">
+                            <connections>
+                                <action selector="closeAction:" destination="9aL-xh-IWm" id="rsr-q5-FCo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="TCB-Ei-UFD">
+                            <connections>
+                                <action selector="saveAction:" destination="9aL-xh-IWm" id="Zdn-zL-2bX"/>
+                                <segue destination="IaC-QE-q0o" kind="push" id="SRd-Nb-cH8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="c1c-6n-Rp0" id="4n6-Mm-soV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiA-bw-JOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="5"/>
+            <point key="canvasLocation" x="1103" y="105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AQu-RZ-JnY">
+            <objects>
+                <viewController id="IaC-QE-q0o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CF7-64-xzn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucu-9c-YNQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J4y-EA-aOI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DLG-Wd-Me2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldC-u7-AJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TOB-31-Hqr">
@@ -98,12 +129,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4v-ty-yWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="672" y="-567"/>
+            <point key="canvasLocation" x="538" y="105"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

@@ -41,8 +41,6 @@
         
     }];
     
-    
-  
 }
 
 #pragma mark - UITextFieldDelegate
@@ -60,7 +58,7 @@
     if ([segue.identifier isEqualToString:@"pickPhotosSegue"]) {
         UINavigationController *navigationController = segue.destinationViewController;
         KMPickerViewController *pickerViewController = [navigationController.viewControllers objectAtIndex:0];
-        pickerViewController.userId = 3;
+        pickerViewController.userId = self.userId;
     }
 }
 
