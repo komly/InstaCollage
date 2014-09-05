@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AB14A992-3D08-412C-959E-0CF3744F49D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InstaCollage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0B87132-0A94-4B7F-B6F6-75CFF1F8E6E1</key>
+		<string>https://github.com/Komly/instacollage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InstaCollage.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0B87132-0A94-4B7F-B6F6-75CFF1F8E6E1</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Komly/instacollage.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0B87132-0A94-4B7F-B6F6-75CFF1F8E6E1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0B87132-0A94-4B7F-B6F6-75CFF1F8E6E1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstaCollage</string>
+		</dict>
+	</array>
+</dict>
+</plist>
