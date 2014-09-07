@@ -10,4 +10,6 @@
 
 @interface KMCollageViewControler : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *photos;
+
 @end

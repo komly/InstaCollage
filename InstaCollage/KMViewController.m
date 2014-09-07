@@ -9,6 +9,7 @@
 #import "KMViewController.h"
 #import "KMInstagramManager.h"
 #import "KMPickerViewController.h"
+#import "KMInstagramMedia.h"
 
 @interface KMViewController () <UITextFieldDelegate>
 
@@ -22,6 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.usernameTextField setDelegate:self];
+    
+    [[KMInstagramManager sharedManager] getPath:@"users/205921560/media/recent" modelClass:[KMInstagramMedia class] params:nil success:^(id response, KMInstagramPaginationInfo *paginationInfo) {
+            NSLog(@"%@", response);
+    } failure:^(NSError *error, NSInteger statusCode) {
+        NSLog(@"%@", error);
+    }];
 }
 
 #pragma mark - UI Actions

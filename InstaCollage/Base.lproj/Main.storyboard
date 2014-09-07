@@ -82,7 +82,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="TCB-Ei-UFD">
                             <connections>
                                 <action selector="saveAction:" destination="9aL-xh-IWm" id="Zdn-zL-2bX"/>
-                                <segue destination="IaC-QE-q0o" kind="push" id="SRd-Nb-cH8"/>
+                                <segue destination="IaC-QE-q0o" kind="push" identifier="collageSegue" id="SRd-Nb-cH8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1103" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Collage View Controler-->
         <scene sceneID="AQu-RZ-JnY">
             <objects>
-                <viewController id="IaC-QE-q0o" sceneMemberID="viewController">
+                <viewController id="IaC-QE-q0o" customClass="KMCollageViewControler" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CF7-64-xzn"/>
                         <viewControllerLayoutGuide type="bottom" id="ucu-9c-YNQ"/>
@@ -105,6 +105,13 @@
                     <view key="view" contentMode="scaleToFill" id="J4y-EA-aOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tst-Lh-Tee">
+                                <rect key="frame" x="0.0" y="406" width="320" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DLG-Wd-Me2"/>

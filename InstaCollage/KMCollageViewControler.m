@@ -10,4 +10,11 @@
 
 @implementation KMCollageViewControler
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.navigationController.navigationBar setHidden:YES];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+}
+
 @end

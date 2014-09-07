@@ -8,12 +8,16 @@
 
 #import "KMInstagramManager.h"
 #import "KMPhoto.h"
+#import "KMInstagramModel.h"
+#import "KMInstagramPaginationInfo.h"
 #import <AFNetworking.h>
 
 static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
 
 @implementation KMInstagramManager
 
+
+#pragma mark - Initialization
 
 - (instancetype)init {
     
@@ -37,6 +41,54 @@ static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
     return instance;
     
 }
+
+#pragma mark - Generic requests wrappers
+
+- (void)getPath:(NSString*)aPath
+     modelClass:(Class)aModelClass
+     params:(NSDictionary*)aParams
+     success:(void(^)(id response, KMInstagramPaginationInfo *paginationInfo))aSuccess
+     failure:(void(^)(NSError *error, NSInteger statusCode))aFailure {
+    
+    //Prepate params
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:aParams];
+    params[@"client_id"] = kClientId;
+    //TODO: client_id or access_token
+    
+    NSString *path = [aPath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    
+    [self.manager GET:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSDictionary *responseDictionary = (NSDictionary*)responseObject;
+        
+        NSDictionary *paginationDict = responseDictionary[@"pagination"];
+        KMInstagramPaginationInfo *paginationInfo = [[KMInstagramPaginationInfo alloc] initWithDictionary:paginationDict andObjectType:aModelClass];
+        
+        BOOL multiple = [responseDictionary[@"data"] isKindOfClass:[NSArray class]];
+        if(multiple) {
+            NSArray *responseObjects = responseDictionary[@"data"];
+            NSMutableArray *objects = [NSMutableArray arrayWithCapacity:responseObjects.count];
+            
+            for (NSDictionary *info in responseObjects) {
+                id model = [[aModelClass alloc] initWithInfo:info];
+                [objects addObject:model];
+            }
+            
+            aSuccess(objects, paginationInfo);
+        }
+        
+        
+        aSuccess(responseDictionary, paginationInfo);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        aFailure(error, [[operation response] statusCode]);
+    }];
+    
+}
+
+
+#pragma mark - User methods
 
 - (void)getUserIdByUsername:(NSString*)aUsername Success:(void(^)(int userId))aSuccess andFail:(void(^)(NSError *error))aFail {
     

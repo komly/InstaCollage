@@ -10,6 +10,7 @@
 #import "KMInstagramManager.h"
 #import "KMPhoto.h"
 #import "KMPhotoCell.h"
+#import "KMCollageViewControler.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface KMPickerViewController ()
@@ -101,6 +102,25 @@
     
 }
 
+
+#pragma mark Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"collageSegue"]) {
+        KMCollageViewControler *vc = segue.destinationViewController;
+        
+        NSMutableArray *photos = [NSMutableArray array];
+        
+        [self.photos enumerateObjectsUsingBlock:^(KMPhoto *photo, NSUInteger idx, BOOL *stop) {
+            if(photo.selected) {
+                [photos addObject:photo];
+            }
+        }];
+        
+        vc.photos = photos;
+    }
+}
 
 
 

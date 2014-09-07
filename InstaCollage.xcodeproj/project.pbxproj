@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5A5D7FAA98984425B48AE7B8 /* libPods-InstaCollage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F315299C9B44A6AD86B999 /* libPods-InstaCollage.a */; };
+		FF5555B519BBCBFC001DB3F9 /* InstagramInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5555B419BBCBFC001DB3F9 /* InstagramInfo.plist */; };
+		FF5555B819BBCF76001DB3F9 /* KMInstagramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555B719BBCF76001DB3F9 /* KMInstagramModel.m */; };
+		FF5555BB19BBD25A001DB3F9 /* KMInstagramPaginationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555BA19BBD25A001DB3F9 /* KMInstagramPaginationInfo.m */; };
+		FF5555BE19BBE46D001DB3F9 /* KMInstagramMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555BD19BBE46D001DB3F9 /* KMInstagramMedia.m */; };
+		FF5555C119BBE9EA001DB3F9 /* KMInstagramComment.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555C019BBE9EA001DB3F9 /* KMInstagramComment.m */; };
+		FF5555C419BBEAE5001DB3F9 /* KMInstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555C319BBEAE5001DB3F9 /* KMInstagramUser.m */; };
+		FF5555C719BBF6EE001DB3F9 /* KMInstagramUserInPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5555C619BBF6EE001DB3F9 /* KMInstagramUserInPhoto.m */; };
 		FF74FCF419B9EBD9004C5CAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF319B9EBD9004C5CAC /* Foundation.framework */; };
 		FF74FCF619B9EBD9004C5CAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF519B9EBD9004C5CAC /* CoreGraphics.framework */; };
 		FF74FCF819B9EBD9004C5CAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF74FCF719B9EBD9004C5CAC /* UIKit.framework */; };
@@ -43,6 +50,19 @@
 /* Begin PBXFileReference section */
 		036A6A3C4EFA4E5FAB178ABC /* Pods-InstaCollage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCollage.xcconfig"; path = "Pods/Pods-InstaCollage.xcconfig"; sourceTree = "<group>"; };
 		F7F315299C9B44A6AD86B999 /* libPods-InstaCollage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InstaCollage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5555B419BBCBFC001DB3F9 /* InstagramInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InstagramInfo.plist; sourceTree = "<group>"; };
+		FF5555B619BBCF76001DB3F9 /* KMInstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramModel.h; sourceTree = "<group>"; };
+		FF5555B719BBCF76001DB3F9 /* KMInstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramModel.m; sourceTree = "<group>"; };
+		FF5555B919BBD259001DB3F9 /* KMInstagramPaginationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramPaginationInfo.h; sourceTree = "<group>"; };
+		FF5555BA19BBD25A001DB3F9 /* KMInstagramPaginationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramPaginationInfo.m; sourceTree = "<group>"; };
+		FF5555BC19BBE46D001DB3F9 /* KMInstagramMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramMedia.h; sourceTree = "<group>"; };
+		FF5555BD19BBE46D001DB3F9 /* KMInstagramMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramMedia.m; sourceTree = "<group>"; };
+		FF5555BF19BBE9EA001DB3F9 /* KMInstagramComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramComment.h; sourceTree = "<group>"; };
+		FF5555C019BBE9EA001DB3F9 /* KMInstagramComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramComment.m; sourceTree = "<group>"; };
+		FF5555C219BBEAE5001DB3F9 /* KMInstagramUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramUser.h; sourceTree = "<group>"; };
+		FF5555C319BBEAE5001DB3F9 /* KMInstagramUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramUser.m; sourceTree = "<group>"; };
+		FF5555C519BBF6EE001DB3F9 /* KMInstagramUserInPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMInstagramUserInPhoto.h; sourceTree = "<group>"; };
+		FF5555C619BBF6EE001DB3F9 /* KMInstagramUserInPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMInstagramUserInPhoto.m; sourceTree = "<group>"; };
 		FF74FCF019B9EBD9004C5CAC /* InstaCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF74FCF319B9EBD9004C5CAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF74FCF519B9EBD9004C5CAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +156,7 @@
 		FF74FCF919B9EBD9004C5CAC /* InstaCollage */ = {
 			isa = PBXGroup;
 			children = (
+				FF5555B419BBCBFC001DB3F9 /* InstagramInfo.plist */,
 				FF74FD0319B9EBD9004C5CAC /* KMAppDelegate.m */,
 				FF74FD0219B9EBD9004C5CAC /* KMAppDelegate.h */,
 				FFD2A13D19BA1AD200585C15 /* Cells */,
@@ -182,6 +203,18 @@
 			children = (
 				FFA6110019B9F1DC0082C296 /* KMPhoto.h */,
 				FFA6110119B9F1DC0082C296 /* KMPhoto.m */,
+				FF5555B619BBCF76001DB3F9 /* KMInstagramModel.h */,
+				FF5555B719BBCF76001DB3F9 /* KMInstagramModel.m */,
+				FF5555B919BBD259001DB3F9 /* KMInstagramPaginationInfo.h */,
+				FF5555BA19BBD25A001DB3F9 /* KMInstagramPaginationInfo.m */,
+				FF5555BC19BBE46D001DB3F9 /* KMInstagramMedia.h */,
+				FF5555BD19BBE46D001DB3F9 /* KMInstagramMedia.m */,
+				FF5555BF19BBE9EA001DB3F9 /* KMInstagramComment.h */,
+				FF5555C019BBE9EA001DB3F9 /* KMInstagramComment.m */,
+				FF5555C219BBEAE5001DB3F9 /* KMInstagramUser.h */,
+				FF5555C319BBEAE5001DB3F9 /* KMInstagramUser.m */,
+				FF5555C519BBF6EE001DB3F9 /* KMInstagramUserInPhoto.h */,
+				FF5555C619BBF6EE001DB3F9 /* KMInstagramUserInPhoto.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -298,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF74FD0C19B9EBD9004C5CAC /* Images.xcassets in Resources */,
+				FF5555B519BBCBFC001DB3F9 /* InstagramInfo.plist in Resources */,
 				FF74FCFE19B9EBD9004C5CAC /* InfoPlist.strings in Resources */,
 				FF74FD0719B9EBD9004C5CAC /* Main.storyboard in Resources */,
 				FFD2A14319BA2BE600585C15 /* check@2x.png in Resources */,
@@ -353,12 +387,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD2A13C19BA1ACF00585C15 /* KMPhotoCell.m in Sources */,
+				FF5555C719BBF6EE001DB3F9 /* KMInstagramUserInPhoto.m in Sources */,
 				FFA6110619B9F34E0082C296 /* KMInstagramManager.m in Sources */,
 				FF74FD0A19B9EBD9004C5CAC /* KMViewController.m in Sources */,
 				FFD2A13819BA066200585C15 /* KMPickerViewController.m in Sources */,
+				FF5555C419BBEAE5001DB3F9 /* KMInstagramUser.m in Sources */,
+				FF5555C119BBE9EA001DB3F9 /* KMInstagramComment.m in Sources */,
+				FF5555BB19BBD25A001DB3F9 /* KMInstagramPaginationInfo.m in Sources */,
 				FF74FD0419B9EBD9004C5CAC /* KMAppDelegate.m in Sources */,
 				FFD2A14619BA3E7500585C15 /* KMCollageViewControler.m in Sources */,
 				FFA6110219B9F1DC0082C296 /* KMPhoto.m in Sources */,
+				FF5555BE19BBE46D001DB3F9 /* KMInstagramMedia.m in Sources */,
+				FF5555B819BBCF76001DB3F9 /* KMInstagramModel.m in Sources */,
 				FF74FD0019B9EBD9004C5CAC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
