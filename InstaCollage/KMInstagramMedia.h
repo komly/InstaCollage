@@ -28,7 +28,7 @@
 @property (nonatomic, readonly) KMInstagramUser *user;
 
 @property (nonatomic, readonly) KMInstagramComment *caption;
-
+@property (nonatomic, readonly) NSArray *tags;
 
 - (instancetype)initWithInfo:(NSDictionary*)info;
 

@@ -9,6 +9,7 @@
 #import "KMInstagramMedia.h"
 #import "KMInstagramComment.h"
 #import "KMInstagramUserInPhoto.h"
+#import "KMInstagramTag.h"
 
 @implementation KMInstagramMedia
 
@@ -54,6 +55,8 @@
             [tempUsersInPhoto addObject:user];
         }
         _usersInPhoto = [NSArray arrayWithArray:tempUsersInPhoto];
+        
+        _tags = [NSArray arrayWithArray:info[@"tags"]];
         
     }
     return self;
