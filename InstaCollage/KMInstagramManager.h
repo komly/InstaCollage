@@ -11,6 +11,9 @@
 #import "KMInstagramPaginationInfo.h"
 
 
+typedef void(^KMInstagramMediaBlock)(NSArray *media, KMInstagramPaginationInfo *paginationInfo);
+typedef void(^KMInstagramFailureBlock)(NSError *error);
+
 @interface KMInstagramManager : NSObject
 
 @property(nonatomic, strong) AFHTTPRequestOperationManager *manager;
@@ -26,5 +29,8 @@
         success:(void(^)(id response, KMInstagramPaginationInfo *paginationInfo))aSuccess
         failure:(void(^)(NSError *error, NSInteger statusCode))aFailure;
 
+- (void)getMediaForUser:(NSString*)userId
+            withSuccess:(KMInstagramMediaBlock)succes
+                failure:(KMInstagramFailureBlock)failure;
 
 @end

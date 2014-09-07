@@ -10,6 +10,7 @@
 #import "KMPhoto.h"
 #import "KMInstagramModel.h"
 #import "KMInstagramPaginationInfo.h"
+#import "KMInstagramMedia.h"
 #import <AFNetworking.h>
 
 static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
@@ -89,6 +90,24 @@ static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
 
 
 #pragma mark - User methods
+
+
+- (void)getMediaForUser:(NSString*)userId
+            withSuccess:(KMInstagramMediaBlock)succes
+                failure:(KMInstagramFailureBlock)failure {
+    [self getPath:[NSString stringWithFormat:@"users/%@/media/recent",userId] modelClass:[KMInstagramMedia class] params:nil success:^(id response, KMInstagramPaginationInfo *paginationInfo) {
+        if(succes) {
+            NSArray *objects = response;
+            succes(objects, paginationInfo);
+        }
+    } failure:^(NSError *error, NSInteger statusCode) {
+        if(failure) {
+            failure(error);
+        }
+    }];
+}
+
+
 
 - (void)getUserIdByUsername:(NSString*)aUsername Success:(void(^)(int userId))aSuccess andFail:(void(^)(NSError *error))aFail {
     

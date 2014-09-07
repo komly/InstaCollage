@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "KMInstagramManager.h"
 
 @interface InstaCollageTests : XCTestCase
 
@@ -31,4 +32,13 @@
     XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
+- (void) shoudReturnMediaList
+{
+    [[KMInstagramManager sharedManager] getMediaForUser:@"205921560" withSuccess:^(NSArray *media, KMInstagramPaginationInfo *paginationInfo) {
+        XCTAssertNotNil(media, @"Media is nil");
+    } failure:^(NSError *error) {
+        XCTAssertNil(error, "Error is not nil");
+        NSLog(@"%@",error);
+    }];
+}
 @end

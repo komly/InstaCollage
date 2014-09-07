@@ -23,12 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.usernameTextField setDelegate:self];
+    //205921560
     
-    [[KMInstagramManager sharedManager] getPath:@"users/205921560/media/recent" modelClass:[KMInstagramMedia class] params:nil success:^(id response, KMInstagramPaginationInfo *paginationInfo) {
-            NSLog(@"%@", response);
-    } failure:^(NSError *error, NSInteger statusCode) {
-        NSLog(@"%@", error);
-    }];
 }
 
 #pragma mark - UI Actions
