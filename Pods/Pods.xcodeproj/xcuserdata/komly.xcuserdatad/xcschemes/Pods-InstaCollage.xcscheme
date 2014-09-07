@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5375DF2036E146A2832040C3"
+               BlueprintIdentifier = "D2A74D1ED9054011B2FBD1F6"
                BuildableName = "libPods-InstaCollage.a"
                BlueprintName = "Pods-InstaCollage"
                ReferencedContainer = "container:Pods.xcodeproj">

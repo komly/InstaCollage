@@ -24,6 +24,11 @@
     [super viewDidLoad];
     [self.usernameTextField setDelegate:self];
     //205921560
+    [[KMInstagramManager sharedManager] getUserById:@"205921560" success:^(KMInstagramUser *user) {
+        NSLog(@"%@", user);
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
     
 }
 

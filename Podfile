@@ -6,5 +6,6 @@ target "InstaCollage" do
 end
 
 target "InstaCollageTests" do
+	pod "AFNetworking", "~> 2.0"
 end
 

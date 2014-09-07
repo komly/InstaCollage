@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-InstaCollageTests-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InstaCollageTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5375DF2036E146A2832040C3</key>
+		<key>39D09059FF374001948CE3E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9AA40C5736B4236B22F2C8A</key>
+		<key>81FD079187A4495CB6845770</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84F1F72215DC46879063323C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2A74D1ED9054011B2FBD1F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

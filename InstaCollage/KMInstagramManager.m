@@ -79,8 +79,8 @@ static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
             aSuccess(objects, paginationInfo);
         }
         
-        
-        aSuccess(responseDictionary, paginationInfo);
+        id model = [[aModelClass alloc] initWithInfo:responseDictionary[@"data"]];
+        aSuccess(model, paginationInfo);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         aFailure(error, [[operation response] statusCode]);
@@ -89,20 +89,35 @@ static NSString *kClientId =  @"f8979150126a418a948b3bd8a77c1d48";
 }
 
 
-#pragma mark - User methods
+#pragma mark - User
+
+- (void)getUserById:(NSString*)userId
+            success:(KMInstagramUserBlock)aSuccess
+            failure:(KMInstagramFailureBlock)aFailure {
+    [self getPath:[NSString stringWithFormat:@"users/%@",userId] modelClass:[KMInstagramUser class] params:nil success:^(id response, KMInstagramPaginationInfo *paginationInfo) {
+        if (aSuccess) {
+            KMInstagramUser *user = response;
+            aSuccess(user);
+        }
+    } failure:^(NSError *error, NSInteger statusCode) {
+        if (aFailure) {
+            aFailure(error);
+        }
+    }];
+}
 
 
 - (void)getMediaForUser:(NSString*)userId
-            withSuccess:(KMInstagramMediaBlock)succes
-                failure:(KMInstagramFailureBlock)failure {
+            withSuccess:(KMInstagramMediaBlock)aSucces
+                failure:(KMInstagramFailureBlock)aFailure {
     [self getPath:[NSString stringWithFormat:@"users/%@/media/recent",userId] modelClass:[KMInstagramMedia class] params:nil success:^(id response, KMInstagramPaginationInfo *paginationInfo) {
-        if(succes) {
+        if(aSucces) {
             NSArray *objects = response;
-            succes(objects, paginationInfo);
+            aSucces(objects, paginationInfo);
         }
     } failure:^(NSError *error, NSInteger statusCode) {
-        if(failure) {
-            failure(error);
+        if(aFailure) {
+            aFailure(error);
         }
     }];
 }
